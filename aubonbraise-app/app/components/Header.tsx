@@ -22,7 +22,7 @@ export default function Header(){
                 <div className="flex items-center ml-auto gap-8 ">
                     <a href="carte" className=" p-2 hover:underline">Notre carte</a>
                     <a href="point_vente" className=" p-2 hover:underline">Nos points de vente</a>
-                    <a href="histoire" className=" p-2 hover:underline">Notre histoire</a>
+                    <a href="#histoire" className=" p-2 hover:underline">Notre histoire</a>
                      <a href="contact" className="bg-[#DD5A2D] text-white hover:underline  p-4 rounded-4xl ">
                         Nous contacter
                     </a>

@@ -5,7 +5,9 @@ import Image from "next/image"
 export default function Homepage(){
   return(
 <>
-    <Section className="bg-[#F7F3E8] ">
+    <Section
+     id="accueil"
+     className="bg-[#F7F3E8] ">
       <div className="flex  space-y-4 ml-auto mr-auto w-[90%]">
         <div className="flex flex-col justify-center space-y-4 gap-2">
           <div>
@@ -39,7 +41,10 @@ export default function Homepage(){
 
     </Section>
 
-    <Section className="">
+    <Section
+     id="histoire"
+     className=""
+    >
       <h1 className="text-center text-4xl font-bold mb-4">
         Içi, découvrez des produits français cuisinés à la portugaise, ainsi que des spécialités venues du Portugal !
       </h1>
