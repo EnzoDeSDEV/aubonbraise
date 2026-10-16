@@ -7,7 +7,7 @@ export default function Homepage(){
 <>
     <Section className="bg-[#F7F3E8] ">
       <div className="flex  space-y-4 ml-auto mr-auto w-[90%]">
-        <div className="flex flex-col justify-center space-y-4 gap-10">
+        <div className="flex flex-col justify-center space-y-4 gap-2">
           <div>
            <h1 className="text-7xl font-bold mb-4">
             Le goût du Portugal,
@@ -17,7 +17,7 @@ export default function Homepage(){
           </h1> 
           </div>
           
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <p className="text-lg mb-4">
               Une rotisserie portugaise placée sous le signe de la braise, des saveurs généreuses et des bons moments autour de la table.
             </p>
@@ -46,16 +46,25 @@ export default function Homepage(){
       <h2 className="text-center text-2xl font-bold mb-4">
         Notre Histoire
       </h2>
-      <div className="ml-auto mr-auto w-[60%] text-center space-y-6">
-        <p>
-          L’histoire d’Au Bon Braisé du Portugal commence au Portugal, dans les souvenirs d’enfance du patron, autour d’une vieille cheminée. C’est dans cette ambiance rustique qu’est née sa passion pour la cuisine traditionnelle et les préparations d’autrefois.
-        </p>
-        <p>
-          Cette passion s’est ensuite prolongée lors des barbecues partagés entre amis, où le poulet braisé est devenu la spécialité des moments conviviaux. Après plusieurs années de réflexion, le projet a pris vie il y a un an et demi.
-        </p>
-        <p>
-          Aujourd’hui, la rôtisserie vous retrouve sur les marchés et participe à vos événements familiaux, comme les mariages, les baptêmes et les communions, ainsi qu’à des événements d’entreprise ou associatifs. Les poulets sont marinés puis braisés à la crapaudine, avec des produits locaux, pour proposer une cuisine généreuse et authentique.
-        </p>
+      <div className="flex space-y-6">
+        <div className="flex flex-col justify-center space-y-4 gap-2 ml-auto mr-auto w-[50%]"> 
+          <p>
+            L’histoire d’Au Bon Braisé du Portugal commence au Portugal, dans les souvenirs d’enfance du patron, autour d’une vieille cheminée. C’est dans cette ambiance rustique qu’est née sa passion pour la cuisine traditionnelle et les préparations d’autrefois.
+          </p>
+          <p>
+            Cette passion s’est ensuite prolongée lors des barbecues partagés entre amis, où le poulet braisé est devenu la spécialité des moments conviviaux. Après plusieurs années de réflexion, le projet a pris vie il y a un an et demi.
+          </p>
+          <p>
+            Aujourd’hui, la rôtisserie vous retrouve sur les marchés et participe à vos événements familiaux, comme les mariages, les baptêmes et les communions, ainsi qu’à des événements d’entreprise ou associatifs. Les poulets sont marinés puis braisés à la crapaudine, avec des produits locaux, pour proposer une cuisine généreuse et authentique.
+          </p>
+        </div>
+          <Image
+            src="/histoire_image.png"
+            alt="Image de présentation"
+            width={600}
+            height={400}
+            className="justify-end ml-auto"
+          />
       </div>
     </Section>
 </>
