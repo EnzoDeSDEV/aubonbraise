@@ -1,6 +1,43 @@
 import Section from "../components/Section";
 import Button from "../components/Button";
 import Image from "next/image"
+import AzulejosSeparator from "../components/AzulejosSeparator";
+
+const article = [
+  {
+    id: 1,
+    name: "Vente 1",
+    description: "Description de la vente 1"
+  },
+  {
+    id: 2,
+    name: "Vente 2",
+    description: "Description de la vente 2"
+  }
+];
+
+const horaires = [
+  {
+    jour: "Lundi",
+    matin: "8h - 12h",
+    apres_midi: "14h - 18h",
+    lieux: "123 Rue de la Paix, 75000 Paris"
+  },
+  {
+    jour: "Mardi",
+    matin: "8h - 12h",
+    apres_midi: "14h - 18h",
+    lieux: "456 Avenue des Champs-Élysées, 75008 Paris"
+  }
+]; 
+
+const evenements = [
+  {
+    id: 1,
+    title: "Événement 1",
+    description: "Description de l'événement 1"
+}
+];
 
 export default function Homepage(){
   return(
@@ -70,6 +107,86 @@ export default function Homepage(){
             height={400}
             className="justify-end ml-auto"
           />
+      </div>
+    </Section>
+    <AzulejosSeparator />
+    <Section
+    id="carte"
+    className="bg-[#F7F3E8]"
+    >
+      <h1 className="text-center text-4xl font-bold mb-4">
+        Découvrez notre carte
+      </h1>
+      <div className=" space-y-6">
+        <div className="flex flex-col justify-center space-y-4 gap-2 ml-auto mr-auto w-[50%]"> 
+          <p>
+            Nous proposons une cuisine généreuse et authentique, avec des produits locaux et des spécialités portugaises. Notre carte est composée de plats traditionnels, tels que le poulet braisé à la crapaudine, ainsi que des accompagnements savoureux.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-4 ml-auto mr-auto w-[50%]">
+          <p className="bg-[#DD5A2D] text-white p-4 rounded-4xl text-center">
+            photo 1
+          </p>
+          <p className="bg-[#DD5A2D] text-white p-4 rounded-4xl text-center">
+            photo 2
+          </p>
+          <p className="bg-[#DD5A2D] text-white p-4 rounded-4xl text-center">
+            photo 3
+          </p>
+        </div>
+      </div>
+    </Section>
+    <Section
+    id="point_vente"
+    className="">
+      <h1 className="text-center text-4xl font-bold mb-4">
+        Nos points de vente
+      </h1>
+      <div className=" flex gap-4 text-center">
+        <div className="flex flex-col ml-auto mr-auto w-[50%]"> 
+          <h1 className="text-3xl font-bold mb-2">
+            Matin
+          </h1>
+          {horaires.map((vente) => (
+            <li key={vente.jour} className="mb-4 list-none">
+              <h3 className="text-2xl font-bold">{vente.jour}</h3>
+              <p>{vente.matin}</p>
+              <p>{vente.lieux}</p>
+            </li>
+          ))}
+        </div> 
+        <div className="flex flex-col ml-auto mr-auto w-[50%] "> 
+          <h1 className="text-3xl font-bold mb-2">
+            Après-midi
+          </h1>
+            {horaires.map((vente) => (
+            <li key={vente.jour} className="mb-4 list-none">
+              <h3 className="text-2xl font-bold">{vente.jour}</h3>
+              <p>{vente.apres_midi}</p>
+              <p>{vente.lieux}</p>
+            </li>
+          ))}
+        </div> 
+      </div>
+    </Section>
+
+    <Section
+    id="evenement"
+    className="bg-[#F7F3E8]"
+    >
+      <h1 className="text-3xl font-bold mb-2">
+        Événement
+      </h1>
+      <div className="flex flex-col ml-auto mr-auto w-[50%]">
+        {(evenements.length === 0) ? (
+            <p>Aucun événement à venir pour le moment.</p>
+        ) : (
+          <>
+            <h3 className="">{evenements[0].title}</h3>
+            <p className="">{evenements[0].description}</p>
+          </>
+        )}
+        
       </div>
     </Section>
 </>
