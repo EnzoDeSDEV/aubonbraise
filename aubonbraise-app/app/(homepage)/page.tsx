@@ -83,7 +83,7 @@ export default function Homepage(){
         Notre Histoire
       </h2>
       <div className="flex space-y-6">
-        <div className="flex flex-col justify-center space-y-4 gap-2 ml-auto mr-auto w-[50%]"> 
+        <div className="flex flex-col justify-center space-y-4 gap-2 ml-auto mr-5 w-[50%]"> 
           <p>
             L’histoire d’Au Bon Braisé du Portugal commence au Portugal, dans les souvenirs d’enfance du patron, autour d’une vieille cheminée. C’est dans cette ambiance rustique qu’est née sa passion pour la cuisine traditionnelle et les préparations d’autrefois.
           </p>
