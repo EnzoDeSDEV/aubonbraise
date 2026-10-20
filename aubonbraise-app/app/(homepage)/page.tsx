@@ -2,6 +2,8 @@ import Section from "../components/Section";
 import Button from "../components/Button";
 import Image from "next/image"
 import AzulejosSeparator from "../components/AzulejosSeparator";
+import event from "../data/event";
+import FormContact from "../components/formContact";
 
 const article = [
   {
@@ -30,14 +32,6 @@ const horaires = [
     lieux: "456 Avenue des Champs-Élysées, 75008 Paris"
   }
 ]; 
-
-const evenements = [
-  {
-    id: 1,
-    title: "Événement 1",
-    description: "Description de l'événement 1"
-}
-];
 
 export default function Homepage(){
   return(
@@ -178,15 +172,17 @@ export default function Homepage(){
         Événement
       </h1>
       <div className="flex flex-col ml-auto mr-auto w-[50%]">
-        {(evenements.length === 0) ? (
+        {(event.length === 0) ? (
             <p>Aucun événement à venir pour le moment.</p>
         ) : (
           <>
-            <h3 className="">{evenements[0].title}</h3>
-            <p className="">{evenements[0].description}</p>
+            <h3 className="text-2xl font-bold">{event[0].name}</h3>
+            <p className="">{event[0].description}</p>
+            <p className="">{event[0].date}</p>
           </>
         )}
-        
+
+        <FormContact />
       </div>
     </Section>
 </>
