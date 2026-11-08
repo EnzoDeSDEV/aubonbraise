@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Image from "next/image"
 import AzulejosSeparator from "../components/AzulejosSeparator";
 import FormContact from "../components/formContact";
+import PointdeVente from "../components/PointdeVente"
 import { event } from "../data/event";
 
 const article = [
@@ -122,6 +123,7 @@ export default function Homepage(){
       <h1 className="text-center text-4xl font-bold mb-4">
         Nos points de vente
       </h1>
+      <PointdeVente/>
     </Section>
 
     <Section
