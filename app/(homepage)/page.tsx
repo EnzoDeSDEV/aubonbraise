@@ -42,8 +42,8 @@ export default function Homepage(){
               Une rotisserie portugaise placée sous le signe de la braise, des saveurs généreuses et des bons moments autour de la table.
             </p>
             <div className="flex gap-4 items-start" >
-              <Button as="a" href="/carte" text="Notre carte" className="bg-[#DD5A2D] text-white hover:underline  p-4 rounded-4xl" />
-              <Button as="a" href="/point_vente" text="Nos points de vente" className="bg-[#FFFFF] border border-[#214F7C] text-[#214F7C] hover:underline  p-4 rounded-4xl" />
+              <Button as="a" href="#carte" text="Notre carte" className="bg-[#DD5A2D] text-white hover:underline  p-4 rounded-4xl" />
+              <Button as="a" href="#point_vente" text="Nos points de vente" className="bg-[#FFFFF] border border-[#214F7C] text-[#214F7C] hover:underline  p-4 rounded-4xl" />
           </div>
         </div>
       </div>
