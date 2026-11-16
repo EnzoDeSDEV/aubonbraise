@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Image from "next/image"
 import AzulejosSeparator from "../components/AzulejosSeparator";
 import FormContact from "../components/formContact";
+import PointdeVente from "../components/PointdeVente"
 import { event } from "../data/event";
 
 const article = [
@@ -24,7 +25,7 @@ export default function Homepage(){
 <>
     <Section
      id="accueil"
-     className="bg-[#F7F3E8] ">
+     className="bg-[#F7F3E8]">
       <div className="flex  space-y-4 ml-auto mr-auto w-[90%]">
         <div className="flex flex-col justify-center space-y-4 gap-2">
           <div>
@@ -119,9 +120,10 @@ export default function Homepage(){
     <Section
     id="point_vente"
     className="">
-      <h1 className="text-center text-4xl font-bold mb-4">
+      <h1 className="text-center text-6xl font-bold mb-4 txt_bleu">
         Nos points de vente
       </h1>
+      <PointdeVente/>
     </Section>
 
     <Section
