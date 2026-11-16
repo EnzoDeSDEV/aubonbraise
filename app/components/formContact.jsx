@@ -49,7 +49,8 @@ export default function FormContact() {
           border border-[#CBBDA5]
           p-5 md:p-8
           rounded-2xl
-          shadow-sm ${isFormVisible ? "block" : "hidden"}`}
+          shadow-sm
+          overflow-hidden transition-all duration-1000 ease-in-out  ${isFormVisible ? "max-h-[600px] translate-y-0 opacity-100" : "max-h-0 -translate-y-2 opacity-0"}`}
       >
         <h4 className="text-2xl font-bold">Contactez nous ici !</h4>
         <p> Une question ? un événement à organiser ? vous souhaitez recevoir un devis ? contactez-nous !</p>
