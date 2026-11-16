@@ -31,3 +31,27 @@ h2,
 h3 {
   font-family: var(--font-titles), serif;
 }
+
+.bg_bleu {
+  background-color: #214F7C;
+}
+
+.bg_beige {
+  background-color: #FBF1E5;
+}
+
+.bg_orange {
+  background-color: #DD5A2D;
+}
+
+.txt_bleu {
+  color: #214F7C;
+}
+
+.txt_beige {
+  color: #FBF1E5;
+}
+
+.txt_orange {
+  color: #DD5A2D;
+}
