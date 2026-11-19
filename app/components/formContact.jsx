@@ -59,7 +59,7 @@ export default function FormContact() {
             name="name"
             type="text"
             placeholder="Nom"
-            className="p-2 border border-[#CBBDA5] rounded bg-[#FFFCF6] w-full md:w-1/2 rounded-xl"
+            className="p-2 border border-[#CBBDA5] rounded bg-[#FFFCF6] w-full md:w-1/2 rounded-xl "
           />
           <input
             name="email"
@@ -79,7 +79,7 @@ export default function FormContact() {
           placeholder="Message"
           className="p-2 border border-[#CBBDA5] rounded bg-[#FFFCF6] rounded-xl"
         />
-        <Button className={`mt-4 bg-[#A54D35] text-white p-2 rounded hover:bg-[#8C3A25] ${isFormVisible ? "block" : "hidden"}`}>
+        <Button className={`mt-4 bg-[#A54D35] text-white p-2 rounded hover:bg-[#8C3A25]`}>
           Envoyer
         </Button>
       </form>
