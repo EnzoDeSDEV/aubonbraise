@@ -12,17 +12,17 @@ export default function Footer() {
           <h1 className="text-3xl ">Au Bon Braisé du Portugal</h1>
           <p>La tradition portugaise, le goût de la braise.</p>
           <div className="flex gap-3 mt-4">
-            <FaFacebook size={24} />
-            <FaInstagram size={24} />
-            <Mail size={24} />
+            <FaFacebook size={24} href=""/>
+            <FaInstagram size={24} href=""/>
+            <Mail size={24} href=""/>
           </div>
-          <div className="py-8 px-4">
-            <p>Accueil</p>
-            <p>Notre histoire</p>
-            <p>Notre carte</p>
-            <p>Points de vente</p>
-            <p>Événements</p>
-            <p>Contact</p>
+          <div className="py-8 px-4 grid">
+            <a href="#accueil">Accueil</a>
+            <a href="#histoire">Notre histoire</a>
+            <a href="#carte">Notre carte</a>
+            <a href="#point_vente">Points de vente</a>
+            <a href="#evenement">Événements</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>

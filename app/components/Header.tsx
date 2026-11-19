@@ -8,7 +8,7 @@ export default function Header(){
                 <a href="#evenement">Rotisserie Portugaise - Marchés événement</a>
             </div>
             <div className="flex gap-8 items-center bg-[#FFFDF7] p-4 rounded-lg shadow-md">
-                <a href="/">
+                <a href="#accueil">
                 <Image
                 src="/logo.png"
                 alt="Logo Au Bon Braisé du Portugal"
@@ -26,7 +26,7 @@ export default function Header(){
                     <a href="#histoire" className=" p-2 hover:underline">Notre histoire</a>
                     <a href="#carte" className=" p-2 hover:underline">Notre carte</a>
                     <a href="#point_vente" className=" p-2 hover:underline">Nos points de vente</a>
-                     <a href="contact" className="bg-[#DD5A2D] text-white hover:underline  p-4 rounded-4xl ">
+                     <a href="#contact" className="bg-[#DD5A2D] text-white hover:underline  p-4 rounded-4xl ">
                         Nous contacter
                     </a>
                 </div>

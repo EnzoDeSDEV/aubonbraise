@@ -6,20 +6,6 @@ import FormContact from "../components/formContact";
 import PointdeVente from "../components/PointdeVente"
 import { event } from "../data/event";
 
-const article = [
-  {
-    id: 1,
-    name: "Vente 1",
-    description: "Description de la vente 1"
-  },
-  {
-    id: 2,
-    name: "Vente 2",
-    description: "Description de la vente 2"
-  }
-];
-
-
 export default function Homepage(){
   return(
 <>
