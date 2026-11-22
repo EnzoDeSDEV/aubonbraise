@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#DD5A2D] p-8">
+      <div className="bg-[#DD5A2D] p-8 text-sm">
         <div
           className="w-full max-w-[900px]
                 mx-auto text-white
@@ -16,15 +16,22 @@ export default function Footer() {
               Au Bon Braisé du Portugal
             </h1>
             <p>La tradition portugaise, le goût de la braise.</p>
-            <div className="flex justify-center">
-              <a href="https://www.facebook.com/aubonbraiseduportugal" target="_blank">
+            <p>Retrouvez-nous sur les marchés des Hauts-de-France.</p>
+            <div className="flex justify-center gap-4 mt-3">
+              <a
+                href="https://www.facebook.com/aubonbraiseduportugal"
+                target="_blank"
+              >
                 <FaFacebook size={24} />
               </a>
-              <a href="https://www.instagram.com/aubonbraise.duportugal?jplx=YmQ0dnEzbGxwcm5h" target="_blank">
+              <a
+                href="https://www.instagram.com/aubonbraise.duportugal?jplx=YmQ0dnEzbGxwcm5h"
+                target="_blank"
+              >
                 <FaInstagram size={24} />
               </a>
               <a href="mailto:aubonbraise@gmail.com" target="_blank">
-                <Mail size={24}/>
+                <Mail size={24} />
               </a>
             </div>
           </div>
@@ -40,9 +47,9 @@ export default function Footer() {
         </div>
         <div
           className="w-full max-w-[1100px]
-                mx-auto text-white flex items-center justify-center mt-10 grid text-center"
+                mx-auto text-white flex items-center justify-center mt-10 grid text-center border-t"
         >
-          <p>
+          <p className="mt-4">
             © {new Date().getFullYear()} Au Bon Braisé du Portugal | Tous droits
             réservés.
           </p>
