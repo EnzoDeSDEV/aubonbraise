@@ -50,8 +50,7 @@ export default function Footer() {
                 mx-auto text-white flex items-center justify-center mt-10 grid text-center border-t"
         >
           <p className="mt-4">
-            © {new Date().getFullYear()} Au Bon Braisé du Portugal | Tous droits
-            réservés.
+            © 2026 Au Bon Braisé du Portugal | Tous droits réservés.
           </p>
           <a href="/mentions-legales">Mentions légales</a>
           <a href="/politique-de-confidentialite">
